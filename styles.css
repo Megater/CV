@@ -1,0 +1,21 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page{
+  display:flex;
+  box-sizing: border-box;
+
+  width: 210mm;
+  height: 297mm;
+
+  background-color: rgb(207, 206, 206);
+  color: orange;
+
+
+  
+  
+}
