@@ -31,7 +31,8 @@ body {
   flex-direction: column;
   width: 34%; 
   height: 100%;
-  background: #2d511e; 
+  background: #2d511e;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.344); 
   color: #f8fafc;
   padding: 30px 20px;
 }
@@ -128,13 +129,43 @@ body {
   color:#2d511e;
 }
 
+.main-content li,
+.main-content h4{
+  color:#000000;
+}
+
+.main-content li::before{
+  color:#2d511e;
+}
+
 .Name{
-  margin-top: 60px;
+  margin-top: 30px;
   font-size:55px;
   font-weight: 600;
-
   color: #2d511e;
 }
+
+.Name h4{
+  margin: 18px 0;
+  color:#2d511e;
+}
+
+
+
+.Name h3{
+  color: #000000;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+.block{
+  display: flex;
+  flex-direction: row;
+}
+
+
+
 
 
 
