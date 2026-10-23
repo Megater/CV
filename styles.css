@@ -1,21 +1,160 @@
-body {
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
 }
 
-.page{
-  display:flex;
-  box-sizing: border-box;
+body {
+  margin: 0;
+  padding: 20px 0;
+  background-color: #fafaf9;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
 
+.page {
+  display: flex;
+  flex-direction: row;
   width: 210mm;
   height: 297mm;
+  background-color: #ffffff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
 
-  background-color: rgb(207, 206, 206);
-  color: orange;
+.bar {
+  display: flex;
+  flex-direction: column;
+  width: 34%; 
+  height: 100%;
+  background: #2d511e; 
+  color: #f8fafc;
+  padding: 30px 20px;
+}
+
+.profile_photo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.profile_photo img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+.module {
+  margin-bottom: 24px;
+}
+
+.line {
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgba(180, 234, 180, 0.4);
+  margin-bottom: 12px;
+}
+
+.line h2 {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+}
+
+.contact-item {
+  margin-bottom: 10px;
+}
+
+.contact-item .label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #a7f3d0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.contact-item .value {
+  display: block;
+  font-size: 15px;
+  color: #f1f5f9;
+  word-break: break-all;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list li {
+  position: relative;
+  font-size: 13px;
+  color: #f1f5f9;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  padding-left: 14px;
+}
+
+.skills-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #86efac;
+  font-weight: bold;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  width: 66%;
+  height: 100%;
+  padding: 30px;
+  color: #1e293b;
+}
+
+.main-content contact-item line{
+  color: #2d511e;
+}
+
+.Name{
+  margin-top: 60px;
+  font-size:55px;
+  font-weight: 600;
+
+  color: #2d511e;
+}
 
 
-  
-  
+
+
+
+
+
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  body {
+    padding: 0;
+    background: none;
+  }
+
+  .page {
+    box-shadow: none;
+    margin: 0;
+    width: 210mm;
+    height: 297mm;
+    page-break-after: avoid;
+  }
 }
