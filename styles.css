@@ -121,8 +121,11 @@ body {
   color: #1e293b;
 }
 
-.main-content contact-item line{
-  color: #2d511e;
+.main-content .line{
+  border-bottom: 2px solid #000000;
+}
+.main-content h2{
+  color:#2d511e;
 }
 
 .Name{
