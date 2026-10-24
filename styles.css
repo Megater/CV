@@ -46,7 +46,6 @@ body {
 .profile_photo img {
   width: 200px;
   height: 200px;
-  border-radius: 50%;
   object-fit: cover;
   border: 3px solid rgba(255, 255, 255, 0.2);
 }
@@ -139,7 +138,7 @@ body {
 }
 
 .Name{
-  margin: 0px auto;
+  margin: 40px auto;
   font-size:55px;
   font-weight: 600;
   color: #2d511e;
@@ -165,7 +164,12 @@ body {
 }
 
 .Edukacja{
-  margin-bottom: px;
+  margin-top: 50px;
+}
+
+.line_shorter{
+  display: flex;
+  background: #000;
 }
 
 
