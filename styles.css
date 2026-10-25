@@ -169,7 +169,10 @@ body {
 
 .line_shorter{
   display: flex;
-  background: #000;
+  background: #0000003f;
+  height: 1px;
+  width: 10%;
+  border-radius: 20%;
 }
 
 
