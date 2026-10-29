@@ -112,6 +112,29 @@ body {
   font-weight: bold;
 }
 
+.rodo {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.rodo li {
+  position: relative;
+  font-size: 10px;
+  color: #f1f5f9;
+  line-height: 1.4;
+  margin-bottom: 6px;
+  padding-left: 7px;
+}
+
+.rodo li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #86efac;
+  font-weight: bold;
+}
+
 .main-content {
   display: flex;
   flex-direction: column;
