@@ -140,7 +140,7 @@ body {
   flex-direction: column;
   width: 66%;
   height: 100%;
-  padding: 20px 20px 20px 20px;
+  padding: 1px 20px 20px 20px;
   color: #1e293b;
 }
 
@@ -156,6 +156,11 @@ body {
   color:#000000;
 }
 
+.main-content h4{
+  color:#000000;
+  margin-bottom: 4px;
+}
+
 .main-content li::before{
   color:#2d511e;
 }
@@ -168,7 +173,7 @@ body {
 }
 
 .Name h4{
-  margin: 18px 0;
+  margin-top: 18px;
   color:#2d511e;
 }
 
@@ -196,6 +201,12 @@ body {
   height: 1px;
   width: 10%;
   border-radius: 20%;
+}
+
+.main-content h5{
+  margin-top: 0;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 
